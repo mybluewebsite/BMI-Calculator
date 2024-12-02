@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content-wrapper">
+        <h3>Calculate your BMI</h3>
+        <form onsubmit="handleForm(event)">
+
+            <p>Height in centimetres</p>
+            <input type="number" min="0" name="height" required>
+
+            <p>Weight in kilograms</p>
+            <input type="number" min="0" name="weight" required>
+            
+            <p id="result"></p>
+
+            <button type="submit" id="submitButton">Calculate</button>
+        </form>
+        
+        <h2>BMI advice</h2>
+        <p>Lower than 18.5: Too low</p>
+        <p>Between 18.5 and 25 : Healthy weight</p>
+        <p>Higher than 25: Too high</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
